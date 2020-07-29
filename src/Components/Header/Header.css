@@ -1,0 +1,74 @@
+.app__header{
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 10vh;   
+    background-color: rgb(0, 0, 0);
+    color:#fff;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.app__header__logo{
+    width: 100px;
+    height: 40px;
+}
+
+.app__header__search{
+    display: flex;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.app__header__search__field{
+    padding: 5px;
+    width: 100%;
+}
+
+.app__header__search__icon{
+    background-color: chocolate;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.app__header__buttons{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.app__header__buttons__links{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.app__header__buttons__links__button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+
+}
+
+.app__header__buttons__links__button__upperspan{
+    font-size: 13px;
+}
+
+.app__header__buttons__links__button__lowerspan{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.app__header__buttons__links__button__count{
+  position: absolute;
+  top:-17px
+
+}
+.app__header__buttons__links__button__basket{
+    position: absolute;
+    top:-3px;
+    left:-3px;
+}
