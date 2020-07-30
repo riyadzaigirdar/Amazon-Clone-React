@@ -1,0 +1,10 @@
+.app__home{
+    margin: 50px auto -80px;  
+    width: 90%;
+}
+
+.app__home__banner{
+    width:100%;
+    min-height: 200px;
+    object-fit: center;
+}
