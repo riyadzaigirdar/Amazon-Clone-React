@@ -46,10 +46,18 @@
   justify-content: space-between;
 }
 
-.app__cart__left__items__item__details > button {
+.app__cart__left__items__item__details__removebutton {
   width: 40%;
   background-color: rgb(250, 228, 28);
   border: 1px solid black;
+  cursor: pointer;
+}
+
+.app__cart__left__items__item__details__increasebutton {
+  width: 40%;
+  background-color: rgb(61, 224, 11);
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .app__cart__right {

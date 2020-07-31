@@ -7,8 +7,10 @@ import { animated, useTransition } from "react-spring";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import Sidemenu from "../Sidemenu/Sidemenu";
+import useStateValue from "../../StateProvider";
 
 function Header() {
+  const state = useStateValue()[0];
   const [showcollapsebar, setShowCollapseBar] = useState(
     window.innerWidth < 700
   );
@@ -93,7 +95,7 @@ function Header() {
           <Link to="/cart" className="app__header__buttons__links">
             <div className="app__header__buttons__links__button">
               <span className="app__header__buttons__links__button__count">
-                0
+                {state.basket.length}
               </span>
               <span className="app__header__buttons__links__button__basket">
                 <ShoppingBasketIcon />
