@@ -1,39 +1,35 @@
-
-
 .sidemenu__icons {
-    fill: black!important;
-    
+  fill: black !important;
 }
-.sidemenu__topbar{
-    padding: 10px 10px 5px;
-    border-bottom: 1px solid lightgray;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    position: relative;
-    
-}
-div.sidemenu__menuitems{
-    overflow: auto;
-    height: 600px;
-    will-change: transform;
-}
-.down{
-    position: absolute;
-    left: 35px;
-    bottom: 7px;
+.sidemenu__topbar {
+  padding: 10px 10px 5px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  position: relative;
 }
 
-.text{
-    color: black!important;
+div.sidemenu__menuitems {
+  overflow: auto;
+  height: 600px;
+  will-change: transform;
+}
+.down {
+  position: absolute;
+  left: 35px;
+  bottom: 7px;
 }
 
-.sidemenu__link{
-    text-decoration: none;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    justify-content: space-between;
+.text {
+  color: black !important;
 }
 
+.sidemenu__link {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  justify-content: space-between;
+}

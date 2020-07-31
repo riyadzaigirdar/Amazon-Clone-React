@@ -1,0 +1,26 @@
+.app__products__product {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 85%;
+  justify-self: center;
+  margin: 10px;
+  padding: 15px;
+  word-wrap: wrap;
+  justify-content: space-between;
+  -webkit-box-shadow: 3px 3px 16px 3px rgba(156, 150, 156, 1);
+  -moz-box-shadow: 3px 3px 16px 3px rgba(156, 150, 156, 1);
+  box-shadow: 3px 3px 16px 3px rgba(156, 150, 156, 1);
+}
+
+.app__products__product__image {
+  width: 120px;
+  height: 150px;
+  align-self: center;
+}
+.app__products__product__button {
+  width: 50%;
+  align-self: center;
+  background-color: rgb(195, 182, 57);
+}
