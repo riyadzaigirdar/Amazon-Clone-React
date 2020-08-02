@@ -73,7 +73,7 @@ function Cart() {
           <h1>No items in the cart</h1>
         )}
       </div>
-      {state.basket.length != 0 && (
+      {state.basket.length !== 0 && (
         <div className="app__cart__right">
           <strong>Total items: {state.basket.length}</strong>
           <p>

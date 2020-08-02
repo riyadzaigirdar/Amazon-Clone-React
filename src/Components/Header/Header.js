@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import Sidemenu from "../Sidemenu/Sidemenu";
 import useStateValue from "../../StateProvider";
+import { auth } from "../../firebase";
 
 function Header() {
   const state = useStateValue()[0];
@@ -16,6 +17,9 @@ function Header() {
   );
   const [showMenu, setShowMenu] = useState(false);
 
+  const logout = () => {
+    auth.signOut();
+  };
   const handlecollapsebar = useCallback(() => {
     if (window.innerWidth < 700) {
       setShowCollapseBar(true);
@@ -60,15 +64,21 @@ function Header() {
 
       {!showcollapsebar && (
         <div className="app__header__buttons">
-          <Link to="/login" className="app__header__buttons__links">
-            <div className="app__header__buttons__links__button">
+          <Link
+            to={!state.user && "/login"}
+            className="app__header__buttons__links"
+          >
+            <div
+              onClick={state.user && logout}
+              className="app__header__buttons__links__button"
+            >
               <span className="app__header__buttons__links__button__upperspan">
                 {" "}
-                hello riyad
+                {state.user ? `hello ${state.user.email}` : "Welcome"}
               </span>
               <span className="app__header__buttons__links__button__lowerspan">
                 {" "}
-                sign in
+                {!state.user ? "Sign in" : "logout"}
               </span>
             </div>
           </Link>

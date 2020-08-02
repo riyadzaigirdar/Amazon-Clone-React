@@ -4,7 +4,7 @@ import "../Products/Products.css";
 import useStateValue from "../../StateProvider";
 
 function Product({ id, title, price, rating, image }) {
-  const [state, dispatch] = useStateValue();
+  const dispatch = useStateValue()[1];
 
   const addToBasket = () =>
     dispatch({

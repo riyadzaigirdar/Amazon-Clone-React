@@ -13,6 +13,11 @@ export const initialState = {
 
 export const reducer = (state, action) => {
   switch (action.type) {
+    case "set_user":
+      return {
+        ...state,
+        user: action.user,
+      };
     case "add_to_cart":
       let basket = [...state.basket];
       let ids = state.basket.map((item) => item.id);

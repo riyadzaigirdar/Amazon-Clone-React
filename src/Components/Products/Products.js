@@ -19,6 +19,34 @@ function Products() {
         rating={4}
         image="https://images-na.ssl-images-amazon.com/images/I/71UyNLSv2mL._AC_SX679_.jpg"
       />
+      <Product
+        id={54645}
+        title="AmazonBasics 48-Count AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+        price={15.49}
+        rating={4}
+        image="https://images-na.ssl-images-amazon.com/images/I/71UyNLSv2mL._AC_SX679_.jpg"
+      />
+      <Product
+        id={90980}
+        title="AmazonBasics 48-Count AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+        price={15.49}
+        rating={4}
+        image="https://images-na.ssl-images-amazon.com/images/I/71UyNLSv2mL._AC_SX679_.jpg"
+      />
+      <Product
+        id={12354567}
+        title="AmazonBasics 48-Count AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+        price={15.49}
+        rating={4}
+        image="https://images-na.ssl-images-amazon.com/images/I/71UyNLSv2mL._AC_SX679_.jpg"
+      />
+      <Product
+        id={8973467}
+        title="AmazonBasics 48-Count AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+        price={15.49}
+        rating={4}
+        image="https://images-na.ssl-images-amazon.com/images/I/71UyNLSv2mL._AC_SX679_.jpg"
+      />
     </div>
   );
 }
